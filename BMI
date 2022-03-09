@@ -1,0 +1,15 @@
+name = input("Enter name: ")
+
+height_m = float(input("Enter height in meters(example 1.89): "))
+weight_kg = float(input("Enter weight in kilograms: "))
+
+def bmi_calculator(name, height_m, weight_kg):
+    bmi = weight_kg / (height_m ** 2)
+    print("bmi: ")
+    print(bmi)
+    if bmi < 25:
+        return name + " not overweight"
+    else:
+        return name + " is overweight"
+result1 = bmi_calculator(name, height_m, weight_kg)
+print(result1)
